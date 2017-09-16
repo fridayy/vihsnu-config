@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    config:
+      name: vishnu-zipkin
+      discovery:
+        service-id: vishnu-zipkin
+        enabled: true
+
+server:
+  port: 9411
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
